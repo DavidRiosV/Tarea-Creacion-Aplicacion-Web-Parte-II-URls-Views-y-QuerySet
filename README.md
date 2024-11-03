@@ -60,7 +60,7 @@
 - **nombre**: Todas los puntos.
 - **funcion**: Mostrar todos los puntos.
 
-- **Falta**:
+### Falta 
 - Uso de re_path.
 
 
