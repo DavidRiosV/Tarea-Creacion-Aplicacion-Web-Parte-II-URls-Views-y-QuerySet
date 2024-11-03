@@ -1,7 +1,6 @@
 # Creacion-Aplicacion-Web-Parte-II-URls-Views-y-QuerySet
-Tarea-Creacion-Aplicacion-Web-Parte-II-URls-Views-y-QuerySet
 
-# Detalles de las URLs y los requisitos que se funcionn
+## Detalles de las URLs y los requisitos 
 
 ### URL 1
 - **nombre**: Ver perfil de usuario.
