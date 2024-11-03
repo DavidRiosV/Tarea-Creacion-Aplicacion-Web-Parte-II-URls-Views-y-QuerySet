@@ -1,0 +1,557 @@
+[
+    {
+        "model": "Steam2.usuario",
+        "pk": 1,
+        "fields": {
+            "nombre": "Juan Perez",
+            "contraseña": "12345",
+            "saldo": 150.00,
+            "fecha_registro": "2024-10-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "Steam2.usuario",
+        "pk": 2,
+        "fields": {
+            "nombre": "Maria Lopez",
+            "contraseña": "abcde",
+            "saldo": 200.00,
+            "fecha_registro": "2024-10-05T11:30:00Z"
+        }
+    },
+    {
+        "model": "Steam2.usuario",
+        "pk": 3,
+        "fields": {
+            "nombre": "Carlos Gomez",
+            "contraseña": "qwerty",
+            "saldo": 300.00,
+            "fecha_registro": "2024-10-10T09:15:00Z"
+        }
+    },
+    {
+        "model": "Steam2.usuario",
+        "pk": 4,
+        "fields": {
+            "nombre": "Ana Martinez",
+            "contraseña": "password",
+            "saldo": 250.00,
+            "fecha_registro": "2024-10-15T14:00:00Z"
+        }
+    },
+    {
+        "model": "Steam2.usuario",
+        "pk": 5,
+        "fields": {
+            "nombre": "Luis Fernandez",
+            "contraseña": "letmein",
+            "saldo": 180.00,
+            "fecha_registro": "2024-10-20T11:45:00Z"
+        }
+    },
+    {
+        "model": "Steam2.perfil",
+        "pk": 1,
+        "fields": {
+            "usuario": 1,
+            "alias": "user-juan",
+            "fecha_creacion": "2024-10-01T10:05:00Z",
+            "ultima_conexion": "2024-10-30T12:00:00Z",
+            "visibilidad": true
+        }
+    },
+    {
+        "model": "Steam2.perfil",
+        "pk": 2,
+        "fields": {
+            "usuario": 2,
+            "alias": "user-maria",
+            "fecha_creacion": "2024-10-05T11:35:00Z",
+            "ultima_conexion": "2024-10-30T13:00:00Z",
+            "visibilidad": true
+        }
+    },
+    {
+        "model": "Steam2.perfil",
+        "pk": 3,
+        "fields": {
+            "usuario": 3,
+            "alias": "user-carlos",
+            "fecha_creacion": "2024-10-10T09:20:00Z",
+            "ultima_conexion": "2024-10-30T14:30:00Z",
+            "visibilidad": true
+        }
+    },
+    {
+        "model": "Steam2.perfil",
+        "pk": 4,
+        "fields": {
+            "usuario": 4,
+            "alias": "user-ana",
+            "fecha_creacion": "2024-10-15T14:05:00Z",
+            "ultima_conexion": "2024-10-30T10:30:00Z",
+            "visibilidad": true
+        }
+    },
+    {
+        "model": "Steam2.perfil",
+        "pk": 5,
+        "fields": {
+            "usuario": 5,
+            "alias": "user-luis",
+            "fecha_creacion": "2024-10-20T11:50:00Z",
+            "ultima_conexion": "2024-10-30T09:00:00Z",
+            "visibilidad": true
+        }
+    },
+    {
+        "model": "Steam2.carrito",
+        "pk": 1,
+        "fields": {
+            "usuario": 1,
+            "total_items": 3,
+            "total_precio": 59.99,
+            "fecha_creacion": "2024-10-01T10:15:00Z"
+        }
+    },
+    {
+        "model": "Steam2.carrito",
+        "pk": 2,
+        "fields": {
+            "usuario": 2,
+            "total_items": 1,
+            "total_precio": 49.99,
+            "fecha_creacion": "2024-10-05T11:40:00Z"
+        }
+    },
+    {
+        "model": "Steam2.carrito",
+        "pk": 3,
+        "fields": {
+            "usuario": 3,
+            "total_items": 2,
+            "total_precio": 89.98,
+            "fecha_creacion": "2024-10-10T09:30:00Z"
+        }
+    },
+    {
+        "model": "Steam2.carrito",
+        "pk": 4,
+        "fields": {
+            "usuario": 4,
+            "total_items": 5,
+            "total_precio": 149.95,
+            "fecha_creacion": "2024-10-15T14:10:00Z"
+        }
+    },
+    {
+        "model": "Steam2.carrito",
+        "pk": 5,
+        "fields": {
+            "usuario": 5,
+            "total_items": 4,
+            "total_precio": 119.96,
+            "fecha_creacion": "2024-10-20T11:55:00Z"
+        }
+    },
+    {
+        "model": "Steam2.biblioteca",
+        "pk": 1,
+        "fields": {
+            "usuario": 1,
+            "nombre": "Biblioteca de Juan",
+            "fecha_creacion": "2024-10-01T10:20:00Z",
+            "tamaño_total": 5
+        }
+    },
+    {
+        "model": "Steam2.biblioteca",
+        "pk": 2,
+        "fields": {
+            "usuario": 2,
+            "nombre": "Biblioteca de Maria",
+            "fecha_creacion": "2024-10-05T11:45:00Z",
+            "tamaño_total": 3
+        }
+    },
+    {
+        "model": "Steam2.biblioteca",
+        "pk": 3,
+        "fields": {
+            "usuario": 3,
+            "nombre": "Biblioteca de Carlos",
+            "fecha_creacion": "2024-10-10T09:25:00Z",
+            "tamaño_total": 4
+        }
+    },
+    {
+        "model": "Steam2.biblioteca",
+        "pk": 4,
+        "fields": {
+            "usuario": 4,
+            "nombre": "Biblioteca de Ana",
+            "fecha_creacion": "2024-10-15T14:15:00Z",
+            "tamaño_total": 6
+        }
+    },
+    {
+        "model": "Steam2.biblioteca",
+        "pk": 5,
+        "fields": {
+            "usuario": 5,
+            "nombre": "Biblioteca de Luis",
+            "fecha_creacion": "2024-10-20T11:50:00Z",
+            "tamaño_total": 2
+        }
+    },
+    {
+        "model": "Steam2.puntos",
+        "pk": 1,
+        "fields": {
+            "usuario": 1,
+            "puntos_acumulados": 250,
+            "fecha_expiracion": "2025-10-01T10:00:00Z",
+            "nivel": 1
+        }
+    },
+    {
+        "model": "Steam2.puntos",
+        "pk": 2,
+        "fields": {
+            "usuario": 2,
+            "puntos_acumulados": 300,
+            "fecha_expiracion": "2025-11-01T10:00:00Z",
+            "nivel": 2
+        }
+    },
+    {
+        "model": "Steam2.puntos",
+        "pk": 3,
+        "fields": {
+            "usuario": 3,
+            "puntos_acumulados": 150,
+            "fecha_expiracion": "2025-12-01T10:00:00Z",
+            "nivel": 1
+        }
+    },
+    {
+        "model": "Steam2.puntos",
+        "pk": 4,
+        "fields": {
+            "usuario": 4,
+            "puntos_acumulados": 180,
+            "fecha_expiracion": "2025-12-15T10:00:00Z",
+            "nivel": 1
+        }
+    },
+    {
+        "model": "Steam2.puntos",
+        "pk": 5,
+        "fields": {
+            "usuario": 5,
+            "puntos_acumulados": 220,
+            "fecha_expiracion": "2025-10-31T10:00:00Z",
+            "nivel": 2
+        }
+    },
+    {
+        "model": "Steam2.distribuidora",
+        "pk": 1,
+        "fields": {
+            "nombre": "DistribuidoraX",
+            "pais_origen": "Estados Unidos",
+            "ingresos_anuales": 1000000.00
+        }
+    },
+    {
+        "model": "Steam2.distribuidora",
+        "pk": 2,
+        "fields": {
+            "nombre": "DistribuidoraY",
+            "pais_origen": "Japón",
+            "ingresos_anuales": 500000.00
+        }
+    },
+    {
+        "model": "Steam2.distribuidora",
+        "pk": 3,
+        "fields": {
+            "nombre": "DistribuidoraZ",
+            "pais_origen": "Reino Unido",
+            "ingresos_anuales": 750000.00
+        }
+    },
+    {
+        "model": "Steam2.distribuidora",
+        "pk": 4,
+        "fields": {
+            "nombre": "DistribuidoraW",
+            "pais_origen": "Francia",
+            "ingresos_anuales": 600000.00
+        }
+    },
+    {
+        "model": "Steam2.distribuidora",
+        "pk": 5,
+        "fields": {
+            "nombre": "DistribuidoraV",
+            "pais_origen": "Alemania",
+            "ingresos_anuales": 800000.00
+        }
+    },
+    {
+        "model": "Steam2.juego",
+        "pk": 1,
+        "fields": {
+            "nombre": "The Last of Us Part II",
+            "precio": 59.99,
+            "fecha_lanzamiento": "2020-06-19T00:00:00Z",
+            "clasificacion_edad": 18,
+            "distribuidora": 1
+        }
+    },
+    {
+        "model": "Steam2.juego",
+        "pk": 2,
+        "fields": {
+            "nombre": "Elden Ring",
+            "precio": 59.99,
+            "fecha_lanzamiento": "2022-02-25T00:00:00Z",
+            "clasificacion_edad": 12,
+            "distribuidora": 1
+        }
+    },
+    {
+        "model": "Steam2.juego",
+        "pk": 3,
+        "fields": {
+            "nombre": "Red Dead Redemption 2",
+            "precio": 59.99,
+            "fecha_lanzamiento": "2018-10-26T00:00:00Z",
+            "clasificacion_edad": 18,
+            "distribuidora": 2
+        }
+    },
+    {
+        "model": "Steam2.juego",
+        "pk": 4,
+        "fields": {
+            "nombre": "Assassin's Creed Valhalla",
+            "precio": 59.99,
+            "fecha_lanzamiento": "2020-11-10T00:00:00Z",
+            "clasificacion_edad": 18,
+            "distribuidora": 3
+        }
+    },
+    {
+        "model": "Steam2.juego",
+        "pk": 5,
+        "fields": {
+            "nombre": "Cyberpunk 2077",
+            "precio": 59.99,
+            "fecha_lanzamiento": "2020-12-10T00:00:00Z",
+            "clasificacion_edad": 18,
+            "distribuidora": 4
+        }
+    },
+    {
+        "model": "Steam2.tienda",
+        "pk": 1,
+        "fields": {
+            "nombre": "Tienda A",
+            "ofertas": "Descuento del 10% en Juego A y Juego B",
+            "oferta_semanal": "2024-10-29",
+            "juegos": [1, 2]
+        }
+    },
+    {
+        "model": "Steam2.tienda",
+        "pk": 2,
+        "fields": {
+            "nombre": "Tienda B",
+            "ofertas": "Compra 1, lleva 2",
+            "oferta_semanal": "2024-10-30",
+            "juegos": [3, 4]
+        }
+    },
+    {
+        "model": "Steam2.tienda",
+        "pk": 3,
+        "fields": {
+            "nombre": "Tienda C",
+            "ofertas": "20% de descuento en todos los juegos",
+            "oferta_semanal": "2024-10-31",
+            "juegos": [1, 3, 5]
+        }
+    },
+    {
+        "model": "Steam2.tienda",
+        "pk": 4,
+        "fields": {
+            "nombre": "Tienda D",
+            "ofertas": "2x1 en juegos seleccionados",
+            "oferta_semanal": "2024-10-29",
+            "juegos": [2, 4]
+        }
+    },
+    {
+        "model": "Steam2.tienda",
+        "pk": 5,
+        "fields": {
+            "nombre": "Tienda E",
+            "ofertas": "50% de descuento en Juegos Indie",
+            "oferta_semanal": "2024-10-31",
+            "juegos": [5]
+        }
+    },
+    {
+        "model": "Steam2.coleccion",
+        "pk": 1,
+        "fields": {
+            "nombre": "Colección de Juan",
+            "numero_juegos": 2,
+            "fecha_creacion": "2024-10-30T12:00:00Z"
+        }
+    },
+    {
+        "model": "Steam2.coleccion",
+        "pk": 2,
+        "fields": {
+            "nombre": "Colección de Maria",
+            "numero_juegos": 3,
+            "fecha_creacion": "2024-10-30T12:30:00Z"
+        }
+    },
+    {
+        "model": "Steam2.coleccion",
+        "pk": 3,
+        "fields": {
+            "nombre": "Colección de Carlos",
+            "numero_juegos": 1,
+            "fecha_creacion": "2024-10-30T12:45:00Z"
+        }
+    },
+    {
+        "model": "Steam2.coleccion",
+        "pk": 4,
+        "fields": {
+            "nombre": "Colección de Ana",
+            "numero_juegos": 4,
+            "fecha_creacion": "2024-10-30T13:00:00Z"
+        }
+    },
+    {
+        "model": "Steam2.coleccion",
+        "pk": 5,
+        "fields": {
+            "nombre": "Colección de Luis",
+            "numero_juegos": 5,
+            "fecha_creacion": "2024-10-30T13:15:00Z"
+        }
+    },
+    {
+        "model": "Steam2.coleccionbibliotecajuego",
+        "pk": 1,
+        "fields": {
+            "coleccion": 1,
+            "biblioteca": 1,
+            "juego": 1,
+            "fecha_adicion": "2024-10-30T12:00:00Z",
+            "comentario": null
+        }
+    },
+    {
+        "model": "Steam2.coleccionbibliotecajuego",
+        "pk": 2,
+        "fields": {
+            "coleccion": 1,
+            "biblioteca": 1,
+            "juego": 2,
+            "fecha_adicion": "2024-10-30T12:05:00Z",
+            "comentario": "Un clásico que no puede faltar."
+        }
+    },
+    {
+        "model": "Steam2.coleccionbibliotecajuego",
+        "pk": 3,
+        "fields": {
+            "coleccion": 2,
+            "biblioteca": 2,
+            "juego": 3,
+            "fecha_adicion": "2024-10-30T12:10:00Z",
+            "comentario": "Visualmente impresionante."
+        }
+    },
+    {
+        "model": "Steam2.coleccionbibliotecajuego",
+        "pk": 4,
+        "fields": {
+            "coleccion": 3,
+            "biblioteca": 3,
+            "juego": 4,
+            "fecha_adicion": "2024-10-30T12:15:00Z",
+            "comentario": "Una aventura épica."
+        }
+    },
+    {
+        "model": "Steam2.coleccionbibliotecajuego",
+        "pk": 5,
+        "fields": {
+            "coleccion": 4,
+            "biblioteca": 4,
+            "juego": 5,
+            "fecha_adicion": "2024-10-30T12:20:00Z",
+            "comentario": "No puedo dejar de jugarlo."
+        }
+    },
+    {
+        "model": "Steam2.amigos",
+        "pk": 1,
+        "fields": {
+            "usuarios": [1, 2],
+            "nivel_amistad": 3,
+            "interacciones_totales": 10,
+            "mensaje_personalizado": "¡Siempre listos para jugar juntos!"
+        }
+    },
+    {
+        "model": "Steam2.amigos",
+        "pk": 2,
+        "fields": {
+            "usuarios": [1, 3],
+            "nivel_amistad": 2,
+            "interacciones_totales": 8,
+            "mensaje_personalizado": "¡Partidas épicas siempre!"
+        }
+    },
+    {
+        "model": "Steam2.amigos",
+        "pk": 3,
+        "fields": {
+            "usuarios": [2, 3],
+            "nivel_amistad": 1,
+            "interacciones_totales": 5,
+            "mensaje_personalizado": "Hablemos más en el juego."
+        }
+    },
+    {
+        "model": "Steam2.amigos",
+        "pk": 4,
+        "fields": {
+            "usuarios": [4, 5],
+            "nivel_amistad": 3,
+            "interacciones_totales": 15,
+            "mensaje_personalizado": "¡Los mejores aliados!"
+        }
+    },
+    {
+        "model": "Steam2.amigos",
+        "pk": 5,
+        "fields": {
+            "usuarios": [1, 4],
+            "nivel_amistad": 2,
+            "interacciones_totales": 7,
+            "mensaje_personalizado": "Siempre en la misma sintonía."
+        }
+    }
+]

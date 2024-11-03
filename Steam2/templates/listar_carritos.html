@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Carritos de Usuarios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo general del cuerpo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        /* Estilo para el título principal */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Estilos para encabezado de tabla */
+        th {
+            background-color: rgba(42, 82, 152, 0.9);
+            color: #ffffff;
+            padding: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Estilos para las celdas de la tabla */
+        td {
+            padding: 12px;
+            text-align: left;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Estilos para filas alternas */
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Estilo para el enlace de "Volver a la página de inicio" */
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #3a7bd5;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Efecto al pasar el mouse sobre el enlace */
+        a:hover {
+            background-color: #2a5298;
+            transform: scale(1.05);
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            table, th, td {
+                font-size: 0.9em;
+            }
+            a {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Carritos de Usuarios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Usuario</th>
+                <th>Saldo del usuario</th>
+                <th>Total de Ítems</th>
+                <th>Precio total</th>
+                <th>Fecha de Creación del Carrito</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+                <tr>
+                    <td>{{ usuario.nombre }}</td>
+                    <td>{{ usuario.saldo }} dólares</td>
+                    <td>{{ usuario.user.total_items }}</td>
+                    <td>{{ usuario.user.total_precio }}</td>
+                    <td>{{ usuario.user.fecha_creacion }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'index_html' %}">Volver a la página de inicio</a>
+</body>
+</html>

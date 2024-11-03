@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    {% for coleccion in coleccion %}
+    <title>{{ coleccion.nombre }}</title>
+    {% endfor %}
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo general del cuerpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Estilo para el título principal */
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        /* Estilo para la lista de detalles */
+        ul {
+            list-style-type: none;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+
+        /* Estilo para cada elemento de la lista principal */
+        ul > li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Estilo para la sublista de bibliotecas */
+        ul ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul ul li {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #dcdcdc;
+        }
+
+        /* Estilo para el enlace de regreso */
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #2a5298;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        /* Efecto al pasar el mouse sobre el enlace */
+        a:hover {
+            background-color: #1e3c72;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            ul > li {
+                font-size: 1.1em;
+            }
+            a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% for coleccion in coleccion %}
+    <h1>{{ coleccion.nombre }}</h1>
+    <ul>
+        <li><strong>Número de juegos:</strong> {{ coleccion.numero_juegos }}</li>
+        <li><strong>Fecha de creación:</strong> {{ coleccion.fecha_creacion }}</li>
+        <li><strong>Bibliotecas:</strong>
+            <ul>
+                {% for biblioteca in coleccion.bibliotecas.all %}
+                    <li>{{ bibliotecas.nombre }}</li>
+                {% empty %}
+                    <li>No hay bibliotecas asociadas.</li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+    {% endfor %}
+    <a href="{% url 'index_html' %}">Volver a la página de inicio</a>
+</body>
+</html>
