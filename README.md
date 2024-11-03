@@ -63,6 +63,9 @@
 ### Falta 
 - Uso de re_path.
 
+- ### Apuntes
+-Los css de mis html son pura decoracion para que se vea todo mas limpio y claro pero no es parte como tal de ningun requisito.
+
 
 
 
